@@ -4,6 +4,7 @@ setlocal EnableDelayedExpansion
 mode 1000
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do     rem"') do (
   set "DEL=%%a"
+title Sanguine Seas - By Hayden C
 )
 :intro
 color 0f
@@ -28,8 +29,8 @@ color 08
 timeout /t 1 /nobreak > nul
 cls
 timeout /t 1 /nobreak > nul
-
-imainMenu
+color 0f
+:mainMenu
 cls                                                                                                                                                                    
 call :colorEcho 0d "                                   TijjT                                                                                                                 ijsl                                            "
 echo.
@@ -47,9 +48,9 @@ call :colorEcho 0d "               vjhhtlvTTT                     TiohmmNMMMNhjT
 echo.
 call :colorEcho 0d "              tmMMNddhhhhstooivvT           TtdmslvlsNMMyT         TlohNMdj    TismNMyv          TiohmNMMMNttv TltyddNMMmjT       vohNdt      vltsdNyv      vjsmMMyv    vthmNMt         vohdddNMMml      "
 echo.
-call :colorEcho 0d "              vjjijjjjjiijtjyNmdhi         ldNdjT ToNMMml        jojjdMNsv  TjsyhNMNyv        TloyysjjtNMMmsjT vijjioNMdl      TiodMMhi    TlomNMMNsT    vtoitMMmtT TvtyydMMNt        vsmmolTvdMNoT      "
+call :colorEcho 0d "              vjjijjjjjiijtjyNmdhi         ldNdjT ToNMMml        jojjdMNsv  TjsyhNMNyv        TloyysjjtNMMmsjT vijjioNMdl      TiodMMhi    TlomNMMNsT    vtoitMMmtT TvtyydMMNt        vsmmol vdMNoT      "
 echo.
-call :colorEcho 0d "                            TihMMNs      TtmmtT  lsMMMMs         vv idmiTviosjlvsMNsT        ihmsl   TjNMdi       ToNmtT     vthNMMMyv   TthyitNMMt      TvT oNyvTljooivlmMmj        vyMhlvvjhmdtT       "
+call :colorEcho 0d "                            TihMMNs      TtmmtT  lsMMMMs         vv idmiTviosjlvsMNsT        ihmsl   TjNMdi       ToNmtT     vthNMMMyv   TthyitNMMt      TvT oNyvTljooivlmMmj        vyMhl  jhmdtT       "
 echo.
 call :colorEcho 0d "                             TsMMMs     ToNhl  lshhMMMNv           lhhlltyolT  tNMsT       ToNdjT  TjhNMNt        tMmj    TishotmMMdv    TilTimMMyT        Tjmovisytv  TyMmj       TtdMMdydddolT         "
 echo.
@@ -120,8 +121,28 @@ echo.
 call :colorEcho 0b "                                   zydmhydhyhyojjiT           zdMNNmddhtjioT     hMMmsz        oymdoo    otsdmyjo                                                                                        "
 echo.
 call :colorEcho 0b "                                      oTTTT                   isoizo            Toyoo           oo      Ttojzo                                                                                           "
-echo.                                                                                                                                                                                                                                                                                                                                                                                                               
-pause;
+echo.
+echo.
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo Press the corresponding number on your keyboard, then press ENTER to continue.
+echo.
+call :colorEcho 0c "1"
+echo ) New Game
+echo.
+call :colorEcho 0a "2"
+echo ) Continue
+echo.
+call :colorEcho 0b "3"
+echo ) Settings
+echo.
+call :colorEcho 09 "4"
+echo ) Credits 
+echo.
+call :colorEcho 0d "5"
+echo ) Exit
+echo.
+set /p $=Selection: 
+
 
 exit
 :colorEcho

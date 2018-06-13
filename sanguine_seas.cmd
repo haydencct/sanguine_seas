@@ -5,15 +5,14 @@ mode 1000
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do     rem"') do (
   set "DEL=%%a"
 )
-:introScene
-color 0f
 :intro
+color 0f
 echo.
 echo.
-echo                 @@@@    @@@@          @@@@      @@          @@   @@@@@@@@@@@     @@@@@@@@@@    @@@@     @@@@      @@@@@@@@@@      @@@@@@@@@@   @@@@@@@@@@@@
-echo                 @@@@    @@@@        @@@@ @@@@    @@        @@    @@@@@@@@@@@     @@@@@@@@@@    @@@@@    @@@@     @@@@@@@@@@@     @@@@@@@@@@@   @@@@@@@@@@@@
-echo                 @@@@    @@@@       @@@@  @@@@     @@      @@     @@@@    @@@@    @@@@          @@@@@@   @@@@    @@@@            @@@@               @@@@
-echo                 @@@@    @@@@      @@@@    @@@@     @@    @@      @@@@     @@@@   @@@@          @@@@@@@  @@@@    @@@@            @@@@               @@@@
+echo                 @@@@    @@@@          @@@@      @@@        @@@   @@@@@@@@@@@     @@@@@@@@@@    @@@@     @@@@      @@@@@@@@@@      @@@@@@@@@@   @@@@@@@@@@@@
+echo                 @@@@    @@@@        @@@@ @@@@    @@@      @@@    @@@@@@@@@@@     @@@@@@@@@@    @@@@@    @@@@     @@@@@@@@@@@     @@@@@@@@@@@   @@@@@@@@@@@@
+echo                 @@@@    @@@@       @@@@  @@@@     @@@    @@@     @@@@    @@@@    @@@@          @@@@@@   @@@@    @@@@            @@@@               @@@@
+echo                 @@@@    @@@@      @@@@    @@@@     @@@  @@@      @@@@     @@@@   @@@@          @@@@@@@  @@@@    @@@@            @@@@               @@@@
 echo                 @@@@@@@@@@@@     @@@@      @@@@     @@  @@       @@@@     @@@@   @@@@@@@@@@    @@@@@@@@ @@@@    @@@@            @@@@               @@@@  
 echo                 @@@@@@@@@@@@     @@@@@@@@@@@@@@@     @@@@        @@@@     @@@@   @@@@@@@@@@    @@@@ @@@@@@@@    @@@@            @@@@               @@@@
 echo                 @@@@    @@@@    @@@@        @@@@     @@@@        @@@@     @@@@   @@@@          @@@@  @@@@@@@    @@@@            @@@@               @@@@
@@ -30,9 +29,98 @@ timeout /t 1 /nobreak > nul
 cls
 timeout /t 1 /nobreak > nul
 
-:mainMenu
-cls
-call :colorEcho 0b "Sanguine Seas"
+imainMenu
+cls                                                                                                                                                                    
+call :colorEcho 0d "                                   TijjT                                                                                                                 ijsl                                            "
+echo.
+call :colorEcho 0d "                               TvodNMMMi                                                                                                               tmNmoT                                            "
+echo.
+call :colorEcho 0d "                            TiohNMMMMMmv                                                                                                              Tshsl                                              "
+echo.
+call :colorEcho 0d "                         vjshytllsMMMml                                                                                                                 T                                                "
+echo.
+call :colorEcho 0d "                     TvtssoiT   jmmslT                                                                                                                                                                   "
+echo.
+call :colorEcho 0d "                  TjoooivT      vlT              Tlijossyysi              TT                                             vlv                                       TT                                    "
+echo.
+call :colorEcho 0d "               vjhhtlvTTT                     TiohmmNMMMNhjT          Tioddt      Tljsi             TvijjjiT       Tlijoddyl        Tvii          Tijl         vjsdyl     Tvijyv          Tvjyddysv      "
+echo.
+call :colorEcho 0d "              tmMMNddhhhhstooivvT           TtdmslvlsNMMyT         TlohNMdj    TismNMyv          TiohmNMMMNttv TltyddNMMmjT       vohNdt      vltsdNyv      vjsmMMyv    vthmNMt         vohdddNMMml      "
+echo.
+call :colorEcho 0d "              vjjijjjjjiijtjyNmdhi         ldNdjT ToNMMml        jojjdMNsv  TjsyhNMNyv        TloyysjjtNMMmsjT vijjioNMdl      TiodMMhi    TlomNMMNsT    vtoitMMmtT TvtyydMMNt        vsmmolTvdMNoT      "
+echo.
+call :colorEcho 0d "                            TihMMNs      TtmmtT  lsMMMMs         vv idmiTviosjlvsMNsT        ihmsl   TjNMdi       ToNmtT     vthNMMMyv   TthyitNMMt      TvT oNyvTljooivlmMmj        vyMhlvvjhmdtT       "
+echo.
+call :colorEcho 0d "                             TsMMMs     ToNhl  lshhMMMNv           lhhlltyolT  tNMsT       ToNdjT  TjhNMNt        tMmj    TishotmMMdv    TilTimMMyT        Tjmovisytv  TyMmj       TtdMMdydddolT         "
+echo.
+call :colorEcho 0d "                             jmMNsT    idNsvTlosjvoMMMh    Tlot   lmdtshtv   TomMdT   TT  lyMml  TltNMMMo       TtNNsT  vjyhjv jNMNi        iNMMyv        ToNhjyyjT   lyMNoT  TT  lhMMdstiilT            "
+echo.
+call :colorEcho 0d "                           loNmyi     jmNoviyyjT ThMMMh Tltysiv  ldMNdov    ToMMMjTltsyjTidMMyltsydMMMNo       lyNMmiTisdsiT  vhMMo        vdMMhv Titv   TtmMmyiT    lhMMdvvjtyolvdMMdl        viv       "
+echo.
+call :colorEcho 0d "        TvtstT        Tvioshsjv     ToNNstyhjT   TNMMMmsyhol    idMmov     TsMMMNyyhsjv imMMMdhojvtMMNoT      imMMMhohdsl    TyMMMoT      lhMMmjisdhjT  ToNMhjT     ldMMMmshhoiTlhMMNtT   Tvioshhi       "
+echo.
+call :colorEcho 0d "       vyNMmjilliiijsssyojlT       vsNMNdslT     ThMMMmolT    TomNyv       iNMNmholT   ThMMMmtv  ThMNoT      TdMMMMmhtv     lhNmyjv      vyMMMNdholT   vhNmtT      TsMMNdyjv   ToNMMNhhhhyhhyoivT        "
+echo.
+call :colorEcho 0d "       Ttyhyoysosotilv             tNMNol         idyol      Ttytl         ihsiv       jMNdov    jMmtT       vhNmytlT       ltlv         jNdyjlv      vssjv        TohoiT      ldNNmdyssjlvT             "
+echo.
+call :colorEcho 0d "          T                        ltjv            T          T             T          osjT     ThNj          vlv                        viT          TT             T         vtivvT                    "
+echo.
+call :colorEcho 0d "                                                                                               Ttms                                                                                                      "
+echo.
+call :colorEcho 0d "                                                                                               imsT                                                                                                      "
+echo.
+call :colorEcho 0d "                                                                                              vydv                                                                                                       "
+echo.
+call :colorEcho 0d "                                                                                             lyyv                                                                                                        "
+echo.
+call :colorEcho 0d "                                                                                            imoT                                                                                                         "
+echo.
+call :colorEcho 0d "                                                                                          vtmt                                                                                                           "
+echo.
+call :colorEcho 0d "                                                                                        Tiyyl                                                                                                            "
+echo.
+call :colorEcho 0d "                                                                                      Tlhsl                                                                                                              "
+echo.
+call :colorEcho 0d "                                                                                   vishov"
+echo.
+call :colorEcho 0d "                                                                                lohysiT"
+echo.
+call :colorEcho 0d "                                                                               vtjT" 
+echo.                                                                                                                                         
+call :colorEcho 0b "                                                               Tzzo                                                                                                                                      "
+echo. 
+call :colorEcho 0b "                                                            TjydNNmz                                                                                                                                     "
+echo.
+call :colorEcho 0b "                                                        TojymMMMMMdo                                                                                                                                     "
+echo.
+call :colorEcho 0b "                                                     TzoyhotthMMMmz                                                                                                                                      "
+echo.
+call :colorEcho 0b "                                                  TioysjzT  jmNhjz                                                                                                                                       "
+echo.
+call :colorEcho 0b "                                              TzjostzT      jjoT                               Tooijttttjo           TitoyoT                                                                             "
+echo.
+call :colorEcho 0b "                                           TisstioT                       TzossotT          TzohmmNMMMNhjT        ojyddhojo                                                                              "
+echo.
+call :colorEcho 0b "                                          tdNMmhyssssjiiioTT           TjydmmMMMmo        otdmsizimMMNtT        zyNNhiTT                                                                                 "
+echo.
+call :colorEcho 0b "                                          jooooooooooossdmdhoT       otdNy  zmMNsT       jdNhz  osMMMyT        imMMNt                                                                                    "
+echo.
+call :colorEcho 0b "                                                        zomMMdj     TsNdi  zyNNso      TommtT  zhMMMNj         imMMMdiT                                                                                  "
+echo.
+call :colorEcho 0b "                                                         TyMMNo   TjhMMyshhmyio       ohNyz  zshNMMMyT         TsNMMMmi                                                                                  "
+echo.
+call :colorEcho 0b "                                                         jmMNsT  oyNMmhsotjz        TjdNtTTzoyjzhMMNt    Tzto   TjNMMMt                                                                                  "
+echo.
+call :colorEcho 0b "                                                       otmNdjT  ohMMdiT       ToT  TtNNjTisyjT imMMNj  ojyojT    oNMMmj                                                                                  "
+echo.
+call :colorEcho 0b "                                     Tijz         TTzjodhoiT   oyMMNtT   TTojthhi oyMmtjyhjT   oMMMNyjshoz     TzyMmsz                                                                                   "
+echo.
+call :colorEcho 0b "                                   osdNdjoTToooitoyhsotoT      oNMMmooossydhytzo ohMMmhozT     jNMMMmsio    Tothmhto                                                                                     "
+echo.
+call :colorEcho 0b "                                   zydmhydhyhyojjiT           zdMNNmddhtjioT     hMMmsz        oymdoo    otsdmyjo                                                                                        "
+echo.
+call :colorEcho 0b "                                      oTTTT                   isoizo            Toyoo           oo      Ttojzo                                                                                           "
+echo.                                                                                                                                                                                                                                                                                                                                                                                                               
 pause;
 
 exit
